@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mashaal_stores">
+    <supports-screens
+        android:smallScreens="false"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:resizeable="false"
+        android:requiresSmallestWidthDp="360"
+
+    />
+    <compatible-screens>
+        <!-- all small size screens -->
+        <screen android:screenSize="small" android:screenDensity="ldpi" />
+        <screen android:screenSize="small" android:screenDensity="mdpi" />
+        <screen android:screenSize="small" android:screenDensity="hdpi" />
+        <screen android:screenSize="small" android:screenDensity="xhdpi" />
+        <!-- all normal size screens -->
+        <screen android:screenSize="normal" android:screenDensity="ldpi" />
+        <screen android:screenSize="normal" android:screenDensity="mdpi" />
+        <screen android:screenSize="normal" android:screenDensity="hdpi" />
+        <screen android:screenSize="normal" android:screenDensity="xhdpi" />
+
+
+    </compatible-screens>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/web_hi_res_512"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.Mashaal_Stores">
+        <activity android:name=".Store5.Update_act_Store5"></activity>
+        <activity android:name=".Store4.Update_act_Store4" />
+        <activity android:name=".Store3.update_act_store3" />
+        <activity android:name=".Store2.update_act_store2" />
+        <activity android:name=".Store1.update_act" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

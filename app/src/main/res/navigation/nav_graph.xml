@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/main_Fragment">
+
+    <fragment
+        android:id="@+id/main_Fragment"
+        android:name="com.example.mashaal_stores.Main_Page.Main_Fragment"
+        android:label="fragment_main_"
+        tools:layout="@layout/fragment_main_" >
+        <action
+            android:id="@+id/action_main_Fragment_to_shaka_Store"
+            app:destination="@id/shaka_Store" />
+        <action
+            android:id="@+id/action_main_Fragment_to_store22"
+            app:destination="@id/store22" />
+        <action
+            android:id="@+id/action_main_Fragment_to_store3"
+            app:destination="@id/store3" />
+        <action
+            android:id="@+id/action_main_Fragment_to_store4"
+            app:destination="@id/store4" />
+        <action
+            android:id="@+id/action_main_Fragment_to_store5"
+            app:destination="@id/store5" />
+    </fragment>
+    <fragment
+        android:id="@+id/shaka_Store"
+        android:name="com.example.mashaal_stores.Store1.Shaka_Store"
+        android:label="fragment_shaka__store"
+        tools:layout="@layout/fragment_shaka__store" >
+        <action
+            android:id="@+id/action_shaka_Store_to_insert_item"
+            app:destination="@id/insert_item" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/insert_item"
+        android:name="com.example.mashaal_stores.Store1.insert_item"
+        android:label="fragment_insert_item"
+        tools:layout="@layout/fragment_insert_item" />
+
+    <fragment
+        android:id="@+id/store22"
+        android:name="com.example.mashaal_stores.Store2.Store2"
+        android:label="Store2" >
+        <action
+            android:id="@+id/action_store22_to_insert_item_store2"
+            app:destination="@id/insert_item_store2" />
+    </fragment>
+    <fragment
+        android:id="@+id/insert_item_store2"
+        android:name="com.example.mashaal_stores.Store2.insert_item_store2"
+        android:label="insert_item_store2" />
+    <fragment
+        android:id="@+id/store3"
+        android:name="com.example.mashaal_stores.Store3.Store3"
+        android:label="Store3" >
+        <action
+            android:id="@+id/action_store3_to_insert_store3"
+            app:destination="@id/insert_store3" />
+    </fragment>
+    <fragment
+        android:id="@+id/insert_store3"
+        android:name="com.example.mashaal_stores.Store3.insert_store3"
+        android:label="insert_store3" />
+    <fragment
+        android:id="@+id/store4"
+        android:name="com.example.mashaal_stores.Store4.Store4"
+        android:label="Store4" >
+        <action
+            android:id="@+id/action_store4_to_insert_store4"
+            app:destination="@id/insert_store4" />
+    </fragment>
+    <fragment
+        android:id="@+id/insert_store4"
+        android:name="com.example.mashaal_stores.Store4.insert_store4"
+        android:label="insert_store4" />
+    <fragment
+        android:id="@+id/store5"
+        android:name="com.example.mashaal_stores.Store5.Store5"
+        android:label="fragment_store5"
+        tools:layout="@layout/fragment_store5" >
+        <action
+            android:id="@+id/action_store5_to_insert_Store5"
+            app:destination="@id/insert_Store5" />
+    </fragment>
+    <fragment
+        android:id="@+id/insert_Store5"
+        android:name="com.example.mashaal_stores.Store5.insert_Store5"
+        android:label="insert_Store5" />
+</navigation>

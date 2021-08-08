@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1,2,3,4,5,6"
+        tools:context=".Store1.Shaka_Store">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:gravity="right"
+                android:padding="10dp"
+                android:text="المتبقي"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="المنصرف"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="وارد"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:layout_column="4"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="الوحده"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="74dp"
+                android:layout_height="match_parent"
+                android:layout_column="5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="الاسم"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:layout_column="6"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="التاريخ"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </TableRow>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/shakaRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+    </TableLayout>
+</LinearLayout>
